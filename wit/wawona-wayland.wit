@@ -1,0 +1,14 @@
+# Wawona Wayland host world (documentation)
+#
+# Implemented by Wawona Relay, consumed by WASI clients.
+# nixpkgs2wasi does not ship the interpreter.
+#
+# Clients speak the real Wayland protocol (wl_display, xdg_wm_base, wl_shm,
+# later linux_dmabuf via wwn-iland). Do not invent a parallel GUI API.
+
+package wawona:wayland@0.1.0;
+
+world client {
+    /// Connect to Wawona Compositor. Host maps this to the session socket.
+    import connect: func() -> result<u32, u32>;
+}

@@ -1,0 +1,29 @@
+[package]
+name = "foot"
+source = "nixpkgs#foot"
+native_port = "wwn-foot"
+status = "planned"
+summary = "Wayland terminal. North-star nixpkgs2wasi conversion."
+license = "MIT"
+
+[wasi]
+preview = 2
+
+[wawona]
+wayland = true
+posix = ["pty", "poll", "signals"]
+graphics = ["shm"]
+
+[appstore]
+profile = "strict"
+
+[wpm]
+repository = "https://repo.wawona.io/wasm/v1"
+
+[capabilities]
+filesystem = true
+network = false
+pty = true
+wayland = true
+graphics = true
+audio = false

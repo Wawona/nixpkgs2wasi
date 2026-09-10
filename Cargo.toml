@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = [
+  "crates/nixpkgs2wasi",
+  "crates/n2w-analyze",
+  "crates/n2w-build",
+  "crates/n2w-nix",
+  "crates/n2w-package",
+  "crates/n2w-patch",
+  "crates/n2w-verify",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Wawona/nixpkgs2wasi"
+rust-version = "1.80"
+
+[workspace.dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+n2w-analyze = { path = "crates/n2w-analyze" }
+n2w-build = { path = "crates/n2w-build" }
+n2w-nix = { path = "crates/n2w-nix" }
+n2w-package = { path = "crates/n2w-package" }
+n2w-patch = { path = "crates/n2w-patch" }
+n2w-verify = { path = "crates/n2w-verify" }
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+toml = "0.8"

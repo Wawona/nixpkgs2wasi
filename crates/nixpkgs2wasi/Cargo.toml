@@ -1,0 +1,19 @@
+[package]
+name = "nixpkgs2wasi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "CLI to convert curated nixpkgs Wayland clients into WASI packages for Wawona"
+
+[[bin]]
+name = "n2w"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+n2w-analyze.workspace = true
+n2w-build.workspace = true
+n2w-verify.workspace = true
+toml.workspace = true

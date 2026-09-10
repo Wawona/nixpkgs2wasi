@@ -1,0 +1,29 @@
+[package]
+name = "hello-wasi-gui"
+source = "relay#hello-wasi-gui"
+native_port = ""
+status = "shipping"
+summary = "Already-shipping WASI P1 Wayland smoke (wl_shm + xdg). Not a nixpkgs conversion."
+license = "MIT"
+
+[wasi]
+preview = 1
+
+[wawona]
+wayland = true
+posix = []
+graphics = ["shm"]
+
+[appstore]
+profile = "strict"
+
+[wpm]
+repository = "https://repo.wawona.io/wasm/v1"
+
+[capabilities]
+filesystem = false
+network = false
+pty = false
+wayland = true
+graphics = true
+audio = false

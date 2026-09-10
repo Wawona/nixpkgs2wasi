@@ -1,0 +1,6 @@
+/target
+**/*.rs.bk
+.direnv/
+result
+result-*
+.DS_Store

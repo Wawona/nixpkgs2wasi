@@ -1,0 +1,11 @@
+[package]
+name = "n2w-verify"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Wawona App Store runtime profile verifier (not Apple review)"
+
+[dependencies]
+n2w-analyze.workspace = true
+thiserror.workspace = true

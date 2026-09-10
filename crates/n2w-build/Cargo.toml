@@ -1,0 +1,15 @@
+[package]
+name = "n2w-build"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Cross-build orchestration. Fail closed until WASI closure builds exist."
+
+[dependencies]
+n2w-analyze.workspace = true
+n2w-nix.workspace = true
+n2w-package.workspace = true
+n2w-patch.workspace = true
+n2w-verify.workspace = true
+thiserror.workspace = true

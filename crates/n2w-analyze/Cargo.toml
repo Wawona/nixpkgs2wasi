@@ -1,0 +1,12 @@
+[package]
+name = "n2w-analyze"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Curated package catalog and compatibility tiers for nixpkgs2wasi"
+
+[dependencies]
+serde.workspace = true
+thiserror.workspace = true
+toml.workspace = true

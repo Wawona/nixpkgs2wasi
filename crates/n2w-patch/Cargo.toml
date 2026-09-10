@@ -1,0 +1,10 @@
+[package]
+name = "n2w-patch"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Build-system adaptation notes for WASI / Wawona hosts"
+
+[dependencies]
+n2w-analyze.workspace = true
